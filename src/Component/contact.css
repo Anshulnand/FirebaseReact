@@ -1,0 +1,106 @@
+/* General Form Styling */
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contact-form:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .form-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Input and Textarea Styling */
+  .form-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  .form-input::placeholder {
+    color: #aaa;
+  }
+  
+  .form-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Submit Button Styling */
+  .submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Smooth transitions for hovering and clicking */
+  .submit-btn:active {
+    background-color: #004080;
+    transform: translateY(2px);
+  }
+  
+  /* Media Queries for mobile responsiveness */
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 20px;
+    }
+    .form-title {
+      font-size: 20px;
+    }
+    .form-input {
+      padding: 12px;
+      font-size: 14px;
+    }
+    .submit-btn {
+      font-size: 16px;
+    }
+  }
+  
