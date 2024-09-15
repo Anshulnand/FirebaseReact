@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Reactcontact from "./Component/reactcontact";
-import Contact from "./Component/contact";
+import reportWebVitals from "./reportWebVitals"; // Ensure this import is correct
 
 function App() {
   return (
@@ -10,5 +10,5 @@ function App() {
     </>
   );
 }
-
+reportWebVitals();
 export default App;
